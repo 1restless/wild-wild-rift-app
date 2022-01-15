@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:wild_wild_rift/builds/SinglePage.dart';
+import 'package:wild_wild_rift/builds/single_page.dart';
 import 'package:wild_wild_rift/data/model.dart';
 import 'package:google_fonts/google_fonts.dart';
 

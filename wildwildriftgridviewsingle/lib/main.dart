@@ -1,4 +1,3 @@
-import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:wild_wild_rift/pages/grid_view_list.dart';
 import 'package:wild_wild_rift/pages/home_page_widget.dart';
@@ -19,10 +18,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-
-        title: 'HOME',
         theme: ThemeData(
-            scaffoldBackgroundColor: const Color(0xFF262D34),
+            scaffoldBackgroundColor: const Color(0xFF0D1821),
             textTheme: const TextTheme(bodyText2: TextStyle(color: Colors.white))),
         home:  SafeArea(
           top: true,

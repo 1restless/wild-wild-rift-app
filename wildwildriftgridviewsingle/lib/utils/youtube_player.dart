@@ -23,7 +23,6 @@ ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 */
 
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:youtube_plyr_iframe/youtube_plyr_iframe.dart';
 
@@ -130,7 +129,7 @@ String convertUrlToId(String url, {bool trimWhitespaces = true}) {
     ),
     RegExp(r"^https:\/\/youtu\.be\/([_\-a-zA-Z0-9]{11}).*$")
   ]) {
-    Match match = regex.firstMatch(url) as Match;
+    Match match = regex.firstMatch(url);
     if (match != null && match.groupCount >= 1) return match.group(1);
   }
   return null;
