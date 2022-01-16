@@ -26,7 +26,6 @@ dependencies:
   flutter_localizations:
     sdk: flutter
   auto_size_text: 3.0.0
-  curved_navigation_bar: 1.0.1
   cached_network_image: 3.1.0+1
   flutter_spinkit: 4.1.2+1
   font_awesome_flutter: 8.11.0
@@ -36,6 +35,7 @@ dependencies:
   page_transition: 2.0.4
   timeago: 3.1.0
   url_launcher: 6.0.15
+  video_player: 2.2.11
   youtube_plyr_iframe: 2.0.7
   sticky_headers: 0.1.7
   ff_navigation_bar: ^0.1.4
@@ -68,6 +68,8 @@ flutter:
     - assets/images/spells/
     - assets/images/runes/
     - assets/images/memes/
+    - assets/videos/
+    - assets/videos/quadraAOV.mp4
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
