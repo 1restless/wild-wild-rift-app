@@ -156,7 +156,7 @@ class _SinglePage extends State<SinglePage> {
                                                             .center,
                                                     children: [
                                                       Image.asset(
-                                                        'assets/images/icon-position-jungle.png',
+                                                        'assets/images/memes/standardbuild.jpg',
                                                         width: 50,
                                                         height: 50,
                                                         fit: BoxFit.cover,
@@ -167,7 +167,7 @@ class _SinglePage extends State<SinglePage> {
                                                                 .fromSTEB(
                                                                     0, 8, 0, 0),
                                                         child: AutoSizeText(
-                                                          'FULL CHAD\n(BURST AP)',
+                                                          'STANDARD BUILD',
                                                           textAlign:
                                                               TextAlign.center,
                                                           style: GoogleFonts
@@ -239,7 +239,7 @@ class _SinglePage extends State<SinglePage> {
                                                             .center,
                                                     children: [
                                                       Image.asset(
-                                                        'assets/images/icon-position-jungle.png',
+                                                        'assets/images/memes/pepechad.png',
                                                         width: 50,
                                                         height: 50,
                                                         fit: BoxFit.cover,
@@ -250,7 +250,7 @@ class _SinglePage extends State<SinglePage> {
                                                                 .fromSTEB(
                                                                     0, 8, 0, 0),
                                                         child: AutoSizeText(
-                                                          'BETA BUILD\n(TANK)',
+                                                          'ALT BUILD\n(sigmas only)',
                                                           textAlign:
                                                               TextAlign.center,
                                                           style: GoogleFonts
@@ -304,7 +304,7 @@ class _SinglePage extends State<SinglePage> {
                                             16, 8, 16, 8),
                                     child: Container(
                                       width: MediaQuery.of(context).size.width,
-                                      height: 185,
+                                      height: 165,
                                       decoration: BoxDecoration(
                                         color: const Color(0x00090F13),
                                         boxShadow: const [
@@ -353,11 +353,9 @@ class _SinglePage extends State<SinglePage> {
                                                                       0, 15, 0),
                                                           child: Text(
                                                             'Items',
-                                                            style: TextStyle(
-                                                              fontFamily:
-                                                                  'Poppins',
-                                                              color: Color(
-                                                                  0xA5F5F5F5),
+                                                            style: GoogleFonts.lexendDeca(
+                                                              fontSize: 12,
+                                                              color: Color(0xA5F5F5F5),
                                                             ),
                                                           ),
                                                         ),
@@ -365,14 +363,13 @@ class _SinglePage extends State<SinglePage> {
                                                           padding:
                                                               EdgeInsetsDirectional
                                                                   .fromSTEB(0,
-                                                                      0, 3, 0),
+                                                                      0, 5, 0),
                                                           child: Container(
-                                                            width: 45,
-                                                            height: 45,
+                                                            width: 40,
+                                                            height: 40,
                                                             decoration:
                                                                 BoxDecoration(
-                                                              color: Color(
-                                                                  0xFFEEEEEE),
+                                                              color: Colors.transparent,
                                                               image:
                                                                   DecorationImage(
                                                                 fit: BoxFit
@@ -389,14 +386,13 @@ class _SinglePage extends State<SinglePage> {
                                                           padding:
                                                               EdgeInsetsDirectional
                                                                   .fromSTEB(0,
-                                                                      0, 3, 0),
+                                                                      0, 5, 0),
                                                           child: Container(
-                                                            width: 45,
-                                                            height: 45,
+                                                            width: 40,
+                                                            height: 40,
                                                             decoration:
                                                                 BoxDecoration(
-                                                              color: Color(
-                                                                  0xFFEEEEEE),
+                                                              color: Colors.transparent,
                                                               image:
                                                                   DecorationImage(
                                                                 fit: BoxFit
@@ -413,14 +409,13 @@ class _SinglePage extends State<SinglePage> {
                                                           padding:
                                                               EdgeInsetsDirectional
                                                                   .fromSTEB(0,
-                                                                      0, 3, 0),
+                                                                      0, 5, 0),
                                                           child: Container(
-                                                            width: 45,
-                                                            height: 45,
+                                                            width: 40,
+                                                            height: 40,
                                                             decoration:
                                                                 BoxDecoration(
-                                                              color: Color(
-                                                                  0xFFEEEEEE),
+                                                              color: Colors.transparent,
                                                               image:
                                                                   DecorationImage(
                                                                 fit: BoxFit
@@ -437,14 +432,13 @@ class _SinglePage extends State<SinglePage> {
                                                           padding:
                                                               EdgeInsetsDirectional
                                                                   .fromSTEB(0,
-                                                                      0, 3, 0),
+                                                                      0, 5, 0),
                                                           child: Container(
-                                                            width: 45,
-                                                            height: 45,
+                                                            width: 40,
+                                                            height: 40,
                                                             decoration:
                                                                 BoxDecoration(
-                                                              color: Color(
-                                                                  0xFFEEEEEE),
+                                                              color: Colors.transparent,
                                                               image:
                                                                   DecorationImage(
                                                                 fit: BoxFit
@@ -461,14 +455,13 @@ class _SinglePage extends State<SinglePage> {
                                                           padding:
                                                               EdgeInsetsDirectional
                                                                   .fromSTEB(0,
-                                                                      0, 3, 0),
+                                                                      0, 5, 0),
                                                           child: Container(
-                                                            width: 45,
-                                                            height: 45,
+                                                            width: 40,
+                                                            height: 40,
                                                             decoration:
                                                                 BoxDecoration(
-                                                              color: Color(
-                                                                  0xFFEEEEEE),
+                                                              color: Colors.transparent,
                                                               image:
                                                                   DecorationImage(
                                                                 fit: BoxFit
@@ -485,14 +478,13 @@ class _SinglePage extends State<SinglePage> {
                                                           padding:
                                                               EdgeInsetsDirectional
                                                                   .fromSTEB(0,
-                                                                      0, 3, 0),
+                                                                      0, 5, 0),
                                                           child: Container(
-                                                            width: 45,
-                                                            height: 45,
+                                                            width: 40,
+                                                            height: 40,
                                                             decoration:
                                                                 BoxDecoration(
-                                                              color: Color(
-                                                                  0xFFEEEEEE),
+                                                              color: Colors.transparent,
                                                               image:
                                                                   DecorationImage(
                                                                 fit: BoxFit
@@ -527,11 +519,9 @@ class _SinglePage extends State<SinglePage> {
                                                                       0, 10, 0),
                                                           child: Text(
                                                             'Runes',
-                                                            style: TextStyle(
-                                                              fontFamily:
-                                                                  'Poppins',
-                                                              color: Color(
-                                                                  0xA5F5F5F5),
+                                                            style: GoogleFonts.lexendDeca(
+                                                              fontSize: 12,
+                                                              color: Color(0xA5F5F5F5),
                                                             ),
                                                           ),
                                                         ),
@@ -539,14 +529,13 @@ class _SinglePage extends State<SinglePage> {
                                                           padding:
                                                               EdgeInsetsDirectional
                                                                   .fromSTEB(0,
-                                                                      0, 3, 0),
+                                                                      0, 5, 0),
                                                           child: Container(
-                                                            width: 45,
-                                                            height: 45,
+                                                            width: 40,
+                                                            height: 40,
                                                             decoration:
                                                                 BoxDecoration(
-                                                              color: Color(
-                                                                  0xFFEEEEEE),
+                                                              color: Colors.transparent,
                                                               image:
                                                                   DecorationImage(
                                                                 fit: BoxFit
@@ -565,14 +554,13 @@ class _SinglePage extends State<SinglePage> {
                                                           padding:
                                                               EdgeInsetsDirectional
                                                                   .fromSTEB(0,
-                                                                      0, 3, 0),
+                                                                      0, 5, 0),
                                                           child: Container(
-                                                            width: 45,
-                                                            height: 45,
+                                                            width: 40,
+                                                            height: 40,
                                                             decoration:
                                                                 BoxDecoration(
-                                                              color: Color(
-                                                                  0xFFEEEEEE),
+                                                              color: Colors.transparent,
                                                               image:
                                                                   DecorationImage(
                                                                 fit: BoxFit
@@ -591,14 +579,13 @@ class _SinglePage extends State<SinglePage> {
                                                           padding:
                                                               EdgeInsetsDirectional
                                                                   .fromSTEB(0,
-                                                                      0, 3, 0),
+                                                                      0, 5, 0),
                                                           child: Container(
-                                                            width: 45,
-                                                            height: 45,
+                                                            width: 40,
+                                                            height: 40,
                                                             decoration:
                                                                 BoxDecoration(
-                                                              color: Color(
-                                                                  0xFFEEEEEE),
+                                                              color: Colors.transparent,
                                                               image:
                                                                   DecorationImage(
                                                                 fit: BoxFit
@@ -617,14 +604,13 @@ class _SinglePage extends State<SinglePage> {
                                                           padding:
                                                               EdgeInsetsDirectional
                                                                   .fromSTEB(0,
-                                                                      0, 3, 0),
+                                                                      0, 5, 0),
                                                           child: Container(
-                                                            width: 45,
-                                                            height: 45,
+                                                            width: 40,
+                                                            height: 40,
                                                             decoration:
                                                                 BoxDecoration(
-                                                              color: Color(
-                                                                  0xFFEEEEEE),
+                                                              color: Colors.transparent,
                                                               image:
                                                                   DecorationImage(
                                                                 fit: BoxFit
@@ -663,11 +649,9 @@ class _SinglePage extends State<SinglePage> {
                                                             'Spells',
                                                             textAlign:
                                                                 TextAlign.start,
-                                                            style: TextStyle(
-                                                              fontFamily:
-                                                                  'Poppins',
-                                                              color: Color(
-                                                                  0xA5F5F5F5),
+                                                            style: GoogleFonts.lexendDeca(
+                                                              fontSize: 12,
+                                                              color: Color(0xA5F5F5F5),
                                                             ),
                                                           ),
                                                         ),
@@ -675,14 +659,13 @@ class _SinglePage extends State<SinglePage> {
                                                           padding:
                                                               EdgeInsetsDirectional
                                                                   .fromSTEB(0,
-                                                                      0, 3, 0),
+                                                                      0, 5, 0),
                                                           child: Container(
-                                                            width: 45,
-                                                            height: 45,
+                                                            width: 40,
+                                                            height: 40,
                                                             decoration:
                                                                 BoxDecoration(
-                                                              color: Color(
-                                                                  0xFFEEEEEE),
+                                                              color: Colors.transparent,
                                                               image:
                                                                   DecorationImage(
                                                                 fit: BoxFit
@@ -699,14 +682,13 @@ class _SinglePage extends State<SinglePage> {
                                                           padding:
                                                               EdgeInsetsDirectional
                                                                   .fromSTEB(0,
-                                                                      0, 3, 0),
+                                                                      0, 5, 0),
                                                           child: Container(
-                                                            width: 45,
-                                                            height: 45,
+                                                            width: 40,
+                                                            height: 40,
                                                             decoration:
                                                                 BoxDecoration(
-                                                              color: Color(
-                                                                  0xFFEEEEEE),
+                                                              color: Colors.transparent,
                                                               image:
                                                                   DecorationImage(
                                                                 fit: BoxFit
@@ -753,11 +735,9 @@ class _SinglePage extends State<SinglePage> {
                                                                       0, 15, 0),
                                                           child: Text(
                                                             'Items',
-                                                            style: TextStyle(
-                                                              fontFamily:
-                                                                  'Poppins',
-                                                              color: Color(
-                                                                  0xA5F5F5F5),
+                                                            style: GoogleFonts.lexendDeca(
+                                                              fontSize: 12,
+                                                              color: Color(0xA5F5F5F5),
                                                             ),
                                                           ),
                                                         ),
@@ -765,14 +745,13 @@ class _SinglePage extends State<SinglePage> {
                                                           padding:
                                                               EdgeInsetsDirectional
                                                                   .fromSTEB(0,
-                                                                      0, 3, 0),
+                                                                      0, 5, 0),
                                                           child: Container(
-                                                            width: 45,
-                                                            height: 45,
+                                                            width: 40,
+                                                            height: 40,
                                                             decoration:
                                                                 BoxDecoration(
-                                                              color: Color(
-                                                                  0xFFEEEEEE),
+                                                              color: Colors.transparent,
                                                               image:
                                                                   DecorationImage(
                                                                 fit: BoxFit
@@ -789,14 +768,13 @@ class _SinglePage extends State<SinglePage> {
                                                           padding:
                                                               EdgeInsetsDirectional
                                                                   .fromSTEB(0,
-                                                                      0, 3, 0),
+                                                                      0, 5, 0),
                                                           child: Container(
-                                                            width: 45,
-                                                            height: 45,
+                                                            width: 40,
+                                                            height: 40,
                                                             decoration:
                                                                 BoxDecoration(
-                                                              color: Color(
-                                                                  0xFFEEEEEE),
+                                                              color: Colors.transparent,
                                                               image:
                                                                   DecorationImage(
                                                                 fit: BoxFit
@@ -813,14 +791,13 @@ class _SinglePage extends State<SinglePage> {
                                                           padding:
                                                               EdgeInsetsDirectional
                                                                   .fromSTEB(0,
-                                                                      0, 3, 0),
+                                                                      0, 5, 0),
                                                           child: Container(
-                                                            width: 45,
-                                                            height: 45,
+                                                            width: 40,
+                                                            height: 40,
                                                             decoration:
                                                                 BoxDecoration(
-                                                              color: Color(
-                                                                  0xFFEEEEEE),
+                                                              color: Colors.transparent,
                                                               image:
                                                                   DecorationImage(
                                                                 fit: BoxFit
@@ -837,14 +814,13 @@ class _SinglePage extends State<SinglePage> {
                                                           padding:
                                                               EdgeInsetsDirectional
                                                                   .fromSTEB(0,
-                                                                      0, 3, 0),
+                                                                      0, 5, 0),
                                                           child: Container(
-                                                            width: 45,
-                                                            height: 45,
+                                                            width: 40,
+                                                            height: 40,
                                                             decoration:
                                                                 BoxDecoration(
-                                                              color: Color(
-                                                                  0xFFEEEEEE),
+                                                              color: Colors.transparent,
                                                               image:
                                                                   DecorationImage(
                                                                 fit: BoxFit
@@ -861,14 +837,13 @@ class _SinglePage extends State<SinglePage> {
                                                           padding:
                                                               EdgeInsetsDirectional
                                                                   .fromSTEB(0,
-                                                                      0, 3, 0),
+                                                                      0, 5, 0),
                                                           child: Container(
-                                                            width: 45,
-                                                            height: 45,
+                                                            width: 40,
+                                                            height: 40,
                                                             decoration:
                                                                 BoxDecoration(
-                                                              color: Color(
-                                                                  0xFFEEEEEE),
+                                                              color: Colors.transparent,
                                                               image:
                                                                   DecorationImage(
                                                                 fit: BoxFit
@@ -885,14 +860,13 @@ class _SinglePage extends State<SinglePage> {
                                                           padding:
                                                               EdgeInsetsDirectional
                                                                   .fromSTEB(0,
-                                                                      0, 3, 0),
+                                                                      0, 5, 0),
                                                           child: Container(
-                                                            width: 45,
-                                                            height: 45,
+                                                            width: 40,
+                                                            height: 40,
                                                             decoration:
                                                                 BoxDecoration(
-                                                              color: Color(
-                                                                  0xFFEEEEEE),
+                                                              color: Colors.transparent,
                                                               image:
                                                                   DecorationImage(
                                                                 fit: BoxFit
@@ -927,11 +901,9 @@ class _SinglePage extends State<SinglePage> {
                                                                       0, 10, 0),
                                                           child: Text(
                                                             'Runes',
-                                                            style: TextStyle(
-                                                              fontFamily:
-                                                                  'Poppins',
-                                                              color: Color(
-                                                                  0xA5F5F5F5),
+                                                            style: GoogleFonts.lexendDeca(
+                                                              fontSize: 12,
+                                                              color: Color(0xA5F5F5F5),
                                                             ),
                                                           ),
                                                         ),
@@ -939,14 +911,13 @@ class _SinglePage extends State<SinglePage> {
                                                           padding:
                                                               EdgeInsetsDirectional
                                                                   .fromSTEB(0,
-                                                                      0, 3, 0),
+                                                                      0, 5, 0),
                                                           child: Container(
-                                                            width: 45,
-                                                            height: 45,
+                                                            width: 40,
+                                                            height: 40,
                                                             decoration:
                                                                 BoxDecoration(
-                                                              color: Color(
-                                                                  0xFFEEEEEE),
+                                                              color: Colors.transparent,
                                                               image:
                                                                   DecorationImage(
                                                                 fit: BoxFit
@@ -965,14 +936,13 @@ class _SinglePage extends State<SinglePage> {
                                                           padding:
                                                               EdgeInsetsDirectional
                                                                   .fromSTEB(0,
-                                                                      0, 3, 0),
+                                                                      0, 5, 0),
                                                           child: Container(
-                                                            width: 45,
-                                                            height: 45,
+                                                            width: 40,
+                                                            height: 40,
                                                             decoration:
                                                                 BoxDecoration(
-                                                              color: Color(
-                                                                  0xFFEEEEEE),
+                                                              color: Colors.transparent,
                                                               image:
                                                                   DecorationImage(
                                                                 fit: BoxFit
@@ -991,14 +961,13 @@ class _SinglePage extends State<SinglePage> {
                                                           padding:
                                                               EdgeInsetsDirectional
                                                                   .fromSTEB(0,
-                                                                      0, 3, 0),
+                                                                      0, 5, 0),
                                                           child: Container(
-                                                            width: 45,
-                                                            height: 45,
+                                                            width: 40,
+                                                            height: 40,
                                                             decoration:
                                                                 BoxDecoration(
-                                                              color: Color(
-                                                                  0xFFEEEEEE),
+                                                              color: Colors.transparent,
                                                               image:
                                                                   DecorationImage(
                                                                 fit: BoxFit
@@ -1017,14 +986,13 @@ class _SinglePage extends State<SinglePage> {
                                                           padding:
                                                               EdgeInsetsDirectional
                                                                   .fromSTEB(0,
-                                                                      0, 3, 0),
+                                                                      0, 5, 0),
                                                           child: Container(
-                                                            width: 45,
-                                                            height: 45,
+                                                            width: 40,
+                                                            height: 40,
                                                             decoration:
                                                                 BoxDecoration(
-                                                              color: Color(
-                                                                  0xFFEEEEEE),
+                                                              color: Colors.transparent,
                                                               image:
                                                                   DecorationImage(
                                                                 fit: BoxFit
@@ -1063,11 +1031,9 @@ class _SinglePage extends State<SinglePage> {
                                                             'Spells',
                                                             textAlign:
                                                                 TextAlign.start,
-                                                            style: TextStyle(
-                                                              fontFamily:
-                                                                  'Poppins',
-                                                              color: Color(
-                                                                  0xA5F5F5F5),
+                                                            style: GoogleFonts.lexendDeca(
+                                                              fontSize: 12,
+                                                              color: Color(0xA5F5F5F5),
                                                             ),
                                                           ),
                                                         ),
@@ -1075,14 +1041,13 @@ class _SinglePage extends State<SinglePage> {
                                                           padding:
                                                               EdgeInsetsDirectional
                                                                   .fromSTEB(0,
-                                                                      0, 3, 0),
+                                                                      0, 5, 0),
                                                           child: Container(
-                                                            width: 45,
-                                                            height: 45,
+                                                            width: 40,
+                                                            height: 40,
                                                             decoration:
                                                                 BoxDecoration(
-                                                              color: Color(
-                                                                  0xFFEEEEEE),
+                                                              color: Colors.transparent,
                                                               image:
                                                                   DecorationImage(
                                                                 fit: BoxFit
@@ -1099,14 +1064,13 @@ class _SinglePage extends State<SinglePage> {
                                                           padding:
                                                               EdgeInsetsDirectional
                                                                   .fromSTEB(0,
-                                                                      0, 3, 0),
+                                                                      0, 5, 0),
                                                           child: Container(
-                                                            width: 45,
-                                                            height: 45,
+                                                            width: 40,
+                                                            height: 40,
                                                             decoration:
                                                                 BoxDecoration(
-                                                              color: Color(
-                                                                  0xFFEEEEEE),
+                                                              color: Colors.transparent,
                                                               image:
                                                                   DecorationImage(
                                                                 fit: BoxFit
