@@ -1,5 +1,7 @@
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:wild_wild_rift/utils/video_player.dart';
 
 class HomePageWidget extends StatefulWidget {
   const HomePageWidget({Key key}) : super(key: key);
@@ -32,8 +34,8 @@ class _HomePageWidgetState extends State<HomePageWidget> {
             child: Padding(
               padding: EdgeInsetsDirectional.fromSTEB(0, 20, 0, 0),
               child: Container(
-                width: 145,
-                height: 145,
+                width: 125,
+                height: 125,
                 decoration: BoxDecoration(
                   color: Color(0x00EEEEEE),
                   image: DecorationImage(
@@ -47,25 +49,46 @@ class _HomePageWidgetState extends State<HomePageWidget> {
             ),
           ),
           Align(
-            alignment: AlignmentDirectional(0, 0.3),
+            alignment: AlignmentDirectional(0, 0.5),
             child: Container(
               width: MediaQuery.of(context).size.width * 0.95,
-              height: MediaQuery.of(context).size.height * 0.5,
+              height: MediaQuery.of(context).size.height * 0.60,
               decoration: BoxDecoration(
                 color: Color(0x3EEEEEEE),
                 border: Border.all(
                   color: Color(0x41EEEEEE),
                 ),
               ),
-              child: Align(
-                alignment: AlignmentDirectional(0, -0.5),
-                child: Text(
-                  'Hey guys!\nThis app is for any of you that doesn\'t want to look and browse through hundreds other pages searching for optimal build for your character. You will find here all the latest and best builds with rune pages, accessible quickly and with ease.\nAll the builds are up to date and come from some of the highest ranked players in WildRift right now.\nI hope it saves your time and you don\'t have to look and fail to chose optimal builds while in character selection.\nApp is designed to be light and fast to not waste your time but please have in mind the fact, that\'s it\'s the first app I have ever written and done so all by myself so it\'s not gonna be perfect but I do hope you enjoy it and find it useful !\n\nCheers !\nRestless',
-                  textAlign: TextAlign.center,
-                  style: GoogleFonts.lexendDeca(
-                    color: Colors.white,
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                crossAxisAlignment: CrossAxisAlignment.center,
+
+                children: [
+                  VideoPlayer(
+                    path:
+                    'assets/videos/movie.mp4',
+                    startAt: Duration(seconds: 6),
+                    videoType: VideoType.asset,
+                    autoPlay: true,
+                    looping: true,
+                    showControls: true,
+                    allowMuting: true,
+                    allowFullScreen: true,
+                    allowPlaybackSpeedMenu: false,
                   ),
-                ),
+                  Padding(
+                    padding: const EdgeInsetsDirectional.fromSTEB(0, 10, 0, 0),
+                    child: AutoSizeText(
+                      'Hey guys!\nThis app is for any of you that doesn\'t want to look and browse through hundreds other pages searching for optimal build for your character. You will find here all the latest and best builds with rune pages, accessible quickly and with ease.\nAll the builds are up to date and come from some of the highest ranked players in WildRift right now.\n\nAbout me\n---------------------\nI\'m former AoV (Arena of Valor) pro player for teams like NovaEsports and Alliance, playing casually now in WildRift, been Challenger since s1. I hope this app helps people that are struggling to find themselves in WildRift and I hope you will find it usefull,\n\nCheers,\nRestless',
+                      textAlign: TextAlign.center,
+                      style: GoogleFonts.lexendDeca(
+                        color: Color(0xDBF5F5F5),
+                        fontSize: 12,
+                        height: 1.3,
+                      ),
+                    ),
+                  ),
+                ],
               ),
             ),
           ),

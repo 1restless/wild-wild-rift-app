@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:wild_wild_rift/data/build_video_player.dart';
 import 'package:wild_wild_rift/pages/grid_view_list.dart';
 import 'package:wild_wild_rift/pages/home_page_widget.dart';
-import 'package:wild_wild_rift/pages/home_page_widget2.dart';
 import 'package:wild_wild_rift/pages/streamers.dart';
 import 'package:ff_navigation_bar/ff_navigation_bar.dart';
 
@@ -43,7 +41,6 @@ class _MainPageState extends State<MainPage> {
     HomePageWidget(),
     GridViewPage(),
     StreamersWidget(),
-    HomePageWidget2()
   ];
 
   @override
@@ -77,10 +74,6 @@ class _MainPageState extends State<MainPage> {
         iconData: Icons.video_label,
         label: 'Streamers',
       ),
-          FFNavigationBarItem(
-            iconData: Icons.camera,
-            label: 'Test',
-          )
 
     ]
       )
