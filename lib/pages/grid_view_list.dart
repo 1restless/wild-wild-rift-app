@@ -1,3 +1,4 @@
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:wild_wild_rift/builds/single_page.dart';
 import 'package:wild_wild_rift/data/model.dart';
@@ -42,9 +43,9 @@ class _GridViewPage extends State<GridViewPage> {
                     gridDelegate:
                         const SliverGridDelegateWithFixedCrossAxisCount(
                       crossAxisCount: 4,
-                      crossAxisSpacing: 10,
-                      mainAxisSpacing: 10,
-                      childAspectRatio: 1,
+                      crossAxisSpacing: 8,
+                      mainAxisSpacing: 1,
+                      childAspectRatio: 0.75,
                     ),
                     itemBuilder: (context, index) {
                       return GridSingleItem(
@@ -76,50 +77,39 @@ class GridSingleItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: onTap,
-      child: Padding(
-        padding: const EdgeInsetsDirectional.fromSTEB(0, 0, 0, 5),
-        child: ClipRRect(
-          borderRadius: BorderRadius.circular(5),
-          child: Container(
-            width: 100,
-            height: 100,
-            decoration: BoxDecoration(
-              color: const Color(0xEEEEEE),
-              image: DecorationImage(
-                fit: BoxFit.cover,
-                image: Image.asset(itemGriddata.image).image,
-              ),
-              boxShadow: const [
-                BoxShadow(
-                  blurRadius: 3,
-                  color: Color(0xDA000000),
-                )
-              ],
-              borderRadius: BorderRadius.circular(9),
-              border: Border.all(
-                color: Colors.black,
-              ),
-            ),
-            child: Align(
-              alignment: AlignmentDirectional(-0.45, 0.85),
-              child: Text(
-                itemGriddata.name,
-                style: GoogleFonts.lexendDeca(
-                  color: Color(0xFFFFFCFC),
-                  fontWeight: FontWeight.normal,
-                  shadows: [
-                    Shadow(
-                      blurRadius: 8.0,
-                      color: Colors.black,
-                      offset: Offset(1.0, 1.0),
+      child: Container(
+          child: Padding(
+            padding: const EdgeInsetsDirectional.fromSTEB(0, 0, 0, 0),
+            child: Column(
+              mainAxisSize: MainAxisSize.max,
+              children: [
+                ClipRRect(
+                  borderRadius: BorderRadius.circular(5),
+                  child: Container(
+                    width: 90,
+                    height: 90,
+                    decoration: BoxDecoration(
+                      color: Colors.transparent,
+                      image: DecorationImage(
+                        fit: BoxFit.cover,
+                        image: Image.asset(
+                          itemGriddata.image,
+                        ).image,
+                      ),
                     ),
-                  ],
+                  ),
                 ),
-              ),
+                AutoSizeText(
+                  itemGriddata.name,
+                  textAlign: TextAlign.center,
+                  style: GoogleFonts.lexendDeca(
+                    color: Color(0xFFF5F5F5),
+                  ),
+                ),
+              ],
             ),
           ),
         ),
-      ),
     );
   }
 }

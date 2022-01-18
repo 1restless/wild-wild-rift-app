@@ -10,8 +10,8 @@ enum VideoType {
   network,
 }
 
-class VideoPlayer extends StatefulWidget {
-  const VideoPlayer({
+class VideoPlayerWidget extends StatefulWidget {
+  const VideoPlayerWidget({
     @required this.path,
     this.videoType = VideoType.network,
     this.width,
@@ -41,12 +41,13 @@ class VideoPlayer extends StatefulWidget {
   final Duration startAt;
   final ChewieProgressColors materialProgressColors;
 
+
   @override
-  State<StatefulWidget> createState() => _VideoPlayerState();
+  State<StatefulWidget> createState() => _VideoPlayerWidgetState();
 }
 
-class _VideoPlayerState extends State<VideoPlayer> {
-  VideoPlayerController _videoPlayerController;
+class _VideoPlayerWidgetState extends State<VideoPlayerWidget> {
+  VideoPlayerController _videoPlayerWidgetController;
   ChewieController _chewieController;
 
   @override
@@ -57,7 +58,7 @@ class _VideoPlayerState extends State<VideoPlayer> {
 
   @override
   void dispose() {
-    _videoPlayerController.dispose();
+    _videoPlayerWidgetController.dispose();
     _chewieController.dispose();
     super.dispose();
   }
@@ -75,12 +76,12 @@ class _VideoPlayerState extends State<VideoPlayer> {
       kDefaultAspectRatio;
 
   Future initializePlayer() async {
-    _videoPlayerController = widget.videoType == VideoType.network
+    _videoPlayerWidgetController = widget.videoType == VideoType.network
         ? VideoPlayerController.network(widget.path)
         : VideoPlayerController.asset(widget.path);
-    await _videoPlayerController.initialize();
+    await _videoPlayerWidgetController.initialize();
     _chewieController = ChewieController(
-      videoPlayerController: _videoPlayerController,
+      videoPlayerController: _videoPlayerWidgetController,
       deviceOrientationsOnEnterFullScreen: [
         DeviceOrientation.landscapeLeft,
         DeviceOrientation.landscapeRight,

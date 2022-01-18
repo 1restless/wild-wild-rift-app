@@ -605,8 +605,8 @@ class _StreamersWidgetState extends State<StreamersWidget> {
                             color: Color(0x65090F13),
                             image: DecorationImage(
                               fit: BoxFit.cover,
-                              image: Image.network(
-                                'https://pbs.twimg.com/profile_banners/1313966142/1636802209/1500x500',
+                              image: Image.asset(
+                                'assets/images/Jhin_0.jpg',
                               ).image,
                             ),
                             borderRadius: BorderRadius.circular(8),
