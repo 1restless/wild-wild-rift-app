@@ -38,7 +38,7 @@ final dynamic itemGriddata = [
       image: "assets/images/Akali.png",
       backgroundimage: "assets/images/Akali_0.jpg",
       url: "https://youtu.be/dwOyLRnCGvE",
-      lane: "mid",
+      lane: "mid/top",
       skill1: "assets/images/AkaliQ.png",
       skill2: "assets/images/AkaliE.png",
       skill3: "assets/images/AkaliW.png",
@@ -202,7 +202,7 @@ final dynamic itemGriddata = [
       altrune4: "assets/images",
       altspell1: "assets/images",
       altspell2: "assets/images",
-      lane: "mid;sup"),
+      lane: "mid/sup"),
   Data(
       name: "Ashe",
       image: "assets/images/Ashe.png",
@@ -236,9 +236,9 @@ final dynamic itemGriddata = [
       altrune4: "assets/images",
       altspell1: "assets/images",
       altspell2: "assets/images",
-      lane: "adc"),
+      lane: "bot"),
   Data(
-      name: "AurelionSol",
+      name: "Aurelion Sol",
       image: "assets/images/AurelionSol.png",
       backgroundimage: "assets/images/AurelionSol_0.jpg",
       url: "https://youtu.be/90m6T3f_F1M",
@@ -338,7 +338,7 @@ final dynamic itemGriddata = [
       altrune4: "assets/images",
       altspell1: "assets/images",
       altspell2: "assets/images",
-      lane: "mid;sup"),
+      lane: "mid/sup"),
   Data(
       name: "Braum",
       image: "assets/images/Braum.png",
@@ -406,7 +406,7 @@ final dynamic itemGriddata = [
       altrune4: "assets/images",
       altspell1: "assets/images",
       altspell2: "assets/images",
-      lane: "adc"),
+      lane: "bot"),
   Data(
       name: "Camille",
       image: "assets/images/Camille.png",
@@ -440,7 +440,7 @@ final dynamic itemGriddata = [
       altrune4: "assets/images",
       altspell1: "assets/images",
       altspell2: "assets/images",
-      lane: "top;jungle"),
+      lane: "top/jungle"),
   Data(
       name: "Corki",
       image: "assets/images/Corki.png",
@@ -474,7 +474,7 @@ final dynamic itemGriddata = [
       altrune4: "assets/images",
       altspell1: "assets/images",
       altspell2: "assets/images",
-      lane: "mid;adc"),
+      lane: "mid/bot"),
   Data(
       name: "Darius",
       image: "assets/images/Darius.png",
@@ -542,7 +542,7 @@ final dynamic itemGriddata = [
       altrune4: "assets/images",
       altspell1: "assets/images",
       altspell2: "assets/images",
-      lane: "mid;jungle"),
+      lane: "mid/jungle"),
   Data(
       name: "Draven",
       image: "assets/images/Draven.png",
@@ -576,7 +576,7 @@ final dynamic itemGriddata = [
       altrune4: "assets/images",
       altspell1: "assets/images",
       altspell2: "assets/images",
-      lane: "adc"),
+      lane: "bot"),
   Data(
       name: "DrMundo",
       image: "assets/images/DrMundo.png",
@@ -610,7 +610,7 @@ final dynamic itemGriddata = [
       altrune4: "assets/images",
       altspell1: "assets/images",
       altspell2: "assets/images",
-      lane: "jungle;top"),
+      lane: "jungle/top"),
   Data(
       name: "Evelynn",
       image: "assets/images/Evelynn.png",
@@ -678,7 +678,7 @@ final dynamic itemGriddata = [
       altrune4: "assets/images",
       altspell1: "assets/images",
       altspell2: "assets/images",
-      lane: "adc"),
+      lane: "bot"),
   Data(
       name: "Fiora",
       image: "assets/images/Fiora.png",
@@ -848,7 +848,7 @@ final dynamic itemGriddata = [
       altrune4: "assets/images",
       altspell1: "assets/images",
       altspell2: "assets/images",
-      lane: "top;jungle"),
+      lane: "top/jungle"),
   Data(
       name: "Graves",
       image: "assets/images/Graves.png",
@@ -1018,7 +1018,7 @@ final dynamic itemGriddata = [
       altrune4: "assets/images",
       altspell1: "assets/images",
       altspell2: "assets/images",
-      lane: "top;jungle"),
+      lane: "top/jungle"),
   Data(
       name: "Jayce",
       image: "assets/images/Jayce.png",
@@ -1086,7 +1086,7 @@ final dynamic itemGriddata = [
       altrune4: "assets/images",
       altspell1: "assets/images",
       altspell2: "assets/images",
-      lane: "adc"),
+      lane: "bot"),
   Data(
       name: "Jinx",
       image: "assets/images/Jinx.png",
@@ -1120,7 +1120,7 @@ final dynamic itemGriddata = [
       altrune4: "assets/images",
       altspell1: "assets/images",
       altspell2: "assets/images",
-      lane: "adc"),
+      lane: "bot"),
   Data(
       name: "Kaisa",
       image: "assets/images/Kaisa.png",
@@ -1154,7 +1154,7 @@ final dynamic itemGriddata = [
       altrune4: "assets/images",
       altspell1: "assets/images",
       altspell2: "assets/images",
-      lane: "adc"),
+      lane: "bot"),
   Data(
       name: "Katarina",
       image: "assets/images/Katarina.png",
@@ -1392,7 +1392,7 @@ final dynamic itemGriddata = [
       altrune4: "assets/images",
       altspell1: "assets/images",
       altspell2: "assets/images",
-      lane: "adc"),
+      lane: "bot"),
   Data(
       name: "Lulu",
       image: "assets/images/Lulu.png",
@@ -1460,7 +1460,7 @@ final dynamic itemGriddata = [
       altrune4: "assets/images",
       altspell1: "assets/images",
       altspell2: "assets/images",
-      lane: "sup;mid"),
+      lane: "sup/mid"),
   Data(
       name: "Malphite",
       image: "assets/images/Malphite.png",
@@ -1562,7 +1562,7 @@ final dynamic itemGriddata = [
       altrune4: "assets/images",
       altspell1: "assets/images",
       altspell2: "assets/images",
-      lane: "adc"),
+      lane: "bot"),
   Data(
       name: "Morgana",
       image: "assets/images/Morgana.png",
@@ -1732,7 +1732,7 @@ final dynamic itemGriddata = [
       altrune4: "assets/images",
       altspell1: "assets/images",
       altspell2: "assets/images",
-      lane: "jungle;top"),
+      lane: "jungle/top"),
   Data(
       name: "Orianna",
       image: "assets/images/Orianna.png",
@@ -2344,7 +2344,7 @@ final dynamic itemGriddata = [
       altrune4: "assets/images",
       altspell1: "assets/images",
       altspell2: "assets/images",
-      lane: "adc"),
+      lane: "bot"),
   Data(
       name: "Vayne",
       image: "assets/images/Vayne.png",
@@ -2378,7 +2378,7 @@ final dynamic itemGriddata = [
       altrune4: "assets/images",
       altspell1: "assets/images",
       altspell2: "assets/images",
-      lane: "adc"),
+      lane: "bot"),
   Data(
     name: "Veigar",
     image: "assets/images/Veigar.png",
@@ -2447,7 +2447,7 @@ final dynamic itemGriddata = [
       altrune4: "assets/images",
       altspell1: "assets/images",
       altspell2: "assets/images",
-      lane: "top;jungle"),
+      lane: "top/jungle"),
   Data(
       name: "Xayah",
       image: "assets/images/Xayah.png",
@@ -2481,7 +2481,7 @@ final dynamic itemGriddata = [
       altrune4: "assets/images",
       altspell1: "assets/images",
       altspell2: "assets/images",
-      lane: "adc"),
+      lane: "bot"),
   Data(
       name: "XinZhao",
       image: "assets/images/XinZhao.png",
@@ -2630,7 +2630,7 @@ class Data {
   final String skill1;
   final String skill2;
   final String skill3;
-  final lane;
+  final String lane;
   final item1;
   final item2;
   final item3;

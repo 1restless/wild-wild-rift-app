@@ -33,20 +33,21 @@ class _GridViewPage extends State<GridViewPage> {
                 ),
               ],
           body: Column(
-            mainAxisSize: MainAxisSize.max,
             children: [
               Expanded(
                 child: Padding(
                   padding: const EdgeInsetsDirectional.fromSTEB(10, 10, 10, 0),
                   child: GridView.builder(
+                    padding: EdgeInsets.zero,
                     itemCount: itemGriddata.length,
                     gridDelegate:
                         const SliverGridDelegateWithFixedCrossAxisCount(
                       crossAxisCount: 4,
-                      crossAxisSpacing: 8,
-                      mainAxisSpacing: 1,
-                      childAspectRatio: 0.75,
+                      crossAxisSpacing: 10,
+                      mainAxisSpacing: 10,
+                      childAspectRatio: 1,
                     ),
+                    shrinkWrap: true,
                     itemBuilder: (context, index) {
                       return GridSingleItem(
                         itemGriddata: itemGriddata[index],
@@ -77,39 +78,35 @@ class GridSingleItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: onTap,
-      child: Container(
-          child: Padding(
-            padding: const EdgeInsetsDirectional.fromSTEB(0, 0, 0, 0),
-            child: Column(
-              mainAxisSize: MainAxisSize.max,
-              children: [
-                ClipRRect(
-                  borderRadius: BorderRadius.circular(5),
-                  child: Container(
-                    width: 90,
-                    height: 90,
-                    decoration: BoxDecoration(
-                      color: Colors.transparent,
-                      image: DecorationImage(
-                        fit: BoxFit.cover,
-                        image: Image.asset(
-                          itemGriddata.image,
-                        ).image,
-                      ),
-                    ),
-                  ),
-                ),
-                AutoSizeText(
+      child: ClipRRect(
+          borderRadius: BorderRadius.circular(5),
+          child: Stack(
+            children: [
+              Image.asset(
+                itemGriddata.image,
+                width: MediaQuery.of(context).size.width,
+                height: MediaQuery.of(context).size.height,
+                fit: BoxFit.cover,
+              ),
+              Align(
+                alignment: AlignmentDirectional(0, 0.94),
+                child: AutoSizeText(
                   itemGriddata.name,
-                  textAlign: TextAlign.center,
                   style: GoogleFonts.lexendDeca(
+                    shadows: [
+                      Shadow(
+                          blurRadius: 15.0,
+                          color: Colors.black,
+                          offset: Offset(0.0, 0.0)),
+                      Shadow(blurRadius: 10,
+                      color: Colors.black,)
+                    ],
                     color: Color(0xFFF5F5F5),
                   ),
                 ),
-              ],
-            ),
-          ),
-        ),
+              ),
+            ],
+          )),
     );
   }
 }
