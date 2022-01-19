@@ -15,10 +15,9 @@ class _GridViewPage extends State<GridViewPage> {
       body: NestedScrollView(
           headerSliverBuilder: (context, innerBoxIsScrolled) => [
                 SliverAppBar(
-                  stretchTriggerOffset: 10,
                   floating: true,
                   pinned: false,
-                  snap: true,
+                  snap: false,
                   backgroundColor: const Color(0xFF090F13),
                   automaticallyImplyLeading: true,
                   title: Text(
@@ -37,29 +36,33 @@ class _GridViewPage extends State<GridViewPage> {
               Expanded(
                 child: Padding(
                   padding: const EdgeInsetsDirectional.fromSTEB(10, 10, 10, 0),
-                  child: GridView.builder(
-                    padding: EdgeInsets.zero,
-                    itemCount: itemGriddata.length,
-                    gridDelegate:
-                        const SliverGridDelegateWithFixedCrossAxisCount(
-                      crossAxisCount: 4,
-                      crossAxisSpacing: 10,
-                      mainAxisSpacing: 10,
-                      childAspectRatio: 1,
-                    ),
-                    shrinkWrap: true,
-                    itemBuilder: (context, index) {
-                      return GridSingleItem(
-                        itemGriddata: itemGriddata[index],
-                        onTap: () async {
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) =>
-                                      SinglePage(itemGriddata[index])));
+                  child: OrientationBuilder(
+                    builder: (context, orientation) {
+                      return GridView.builder(
+                        padding: EdgeInsetsDirectional.fromSTEB(0, 0, 0, 10),
+                        itemCount: itemGriddata.length,
+                        gridDelegate:
+                             SliverGridDelegateWithFixedCrossAxisCount(
+                          crossAxisCount: orientation == Orientation.portrait ? 4:8,
+                          crossAxisSpacing: 5,
+                          mainAxisSpacing: 5,
+                          childAspectRatio: 1,
+                        ),
+                        shrinkWrap: true,
+                        itemBuilder: (context, index) {
+                          return GridSingleItem(
+                            itemGriddata: itemGriddata[index],
+                            onTap: () async {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) =>
+                                          SinglePage(itemGriddata[index])));
+                            },
+                          );
                         },
                       );
-                    },
+                    }
                   ),
                 ),
               ),
