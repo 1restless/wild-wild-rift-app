@@ -41,6 +41,7 @@ dependencies:
   sticky_headers: 0.1.7
   ff_navigation_bar: 0.1.4
   flutter_sticky_header: 0.6.0
+  parallax_animation: 0.0.3
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -70,6 +71,11 @@ flutter:
     - assets/images/spells/
     - assets/images/runes/
     - assets/images/memes/
+    - assets/images/image_tiles/
+    - assets/images/items/ap/
+    - assets/images/items/ad/
+    - assets/images/items/def/
+    - assets/images/items/boots/
     - assets/videos/
 
   # An image asset can refer to one or more resolution-specific "variants", see

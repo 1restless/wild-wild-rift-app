@@ -743,7 +743,7 @@ class _StreamersWidgetState extends State<StreamersWidget> {
                           image: DecorationImage(
                             fit: BoxFit.fitWidth,
                             image: Image.asset(
-                              'assets/images/john-arano-h4i9G-de7Po-unsplash.jpg',
+                              'assets/images/image_tiles/Ahri_99.jpg',
                             ).image,
                           ),
                           boxShadow: [

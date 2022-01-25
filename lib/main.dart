@@ -20,11 +20,7 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
             scaffoldBackgroundColor: const Color(0xFF0D1821),
             textTheme: const TextTheme(bodyText2: TextStyle(color: Colors.white))),
-        home:  SafeArea(
-          top: true,
-          bottom: false,
-          child: MainPage(),
-        ));
+        home:  MainPage());
   }
 }
 
@@ -74,6 +70,10 @@ class _MainPageState extends State<MainPage> {
         iconData: Icons.video_label,
         label: 'Streamers',
       ),
+          FFNavigationBarItem(
+            iconData: Icons.landscape,
+            label: 'Test',
+          )
 
     ]
       )
